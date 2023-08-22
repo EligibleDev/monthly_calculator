@@ -26,6 +26,11 @@ calculateButton.addEventListener('click', function () {
 
     const totalExpenses = parseFloat(foodInput) + parseFloat(rentInput) + parseFloat(billInput) + parseFloat(clothInput);
     document.getElementById('total-expenses').innerText = totalExpenses;
+    if (isNaN(document.getElementById('total-expenses').innerText)) {
+        alert('Invalid Input!!');
+        document.getElementById('total-expenses').innerText = '00';
+        return;
+    }
 
     dueBalance.innerText = totalIncome - totalExpenses;
     if (isNaN(dueBalance.innerText)) {
