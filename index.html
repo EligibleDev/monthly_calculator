@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your monthly calculator</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    
 
+<body>
+    <section class="main">
+        <div class="banner"></div>
+        <!-- <img src="./banner.png" alt=""> -->
+
+        <div class="calculator-container">
+            <h3>incomes</h3>
+
+            <div class="incomes">
+                <div>
+                    <label for="salary-input">Your salary: </label>
+                    <input id="salary-input" placeholder="$" type="number">
+                </div>
+                
+                <div>
+                    <label for="business-input">Business revenue: </label>
+                    <input id="business-input" placeholder="$" type="number">
+                </div>
+
+                <div>
+                    <label for="freelance-input">Freelance income: </label>
+                    <input id="freelance-input" placeholder="$" type="number">
+                </div>
+            </div>
+
+            <h3>expenses</h3>
+
+            <div class="expenses">
+                <div>
+                    <label for="food-input">Food: </label>
+                    <input id="food-input" placeholder="$" type="number">
+                </div>
+
+                <div>
+                    <label for="rent-input">Rent: </label>
+                    <input id="rent-input" placeholder="$" type="number">
+                </div>
+
+                <div>
+                    <label for="bill-input">Bills: </label>
+                    <input id="bill-input" placeholder="$" type="number">
+                </div>
+
+                <div>
+                    <label for="cloth-input">Clothes: </label>
+                    <input id="cloth-input" placeholder="$" type="number">
+                </div>
+            </div>
+
+            <button id="calculate-button">Calculate</button>
+
+            <h3>Total expenses <span id="total-expenses">00</span>$</h3>
+
+            <h3>Balance <span id="due-balance">00</span>$</h3>
+
+            <div>
+                <div class="saving">
+                    <label for="saving-input">Saving: </label>
+                    <input id="saving-input" placeholder="%" type="number">
+                    <button>Calculate</button>
+                </div>
+            </div>
+
+            <h3>Saved amount: <span id="saved-amount">00</span>$</h3>
+            <h3>Remaining balance: <span id="remaining-amount">00</span>$</h3>
+        </div>
+    </section>
 
 
 
@@ -16,4 +88,5 @@
 
     <script src="./app.js"></script>
 </body>
+
 </html>
